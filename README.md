@@ -20,9 +20,4 @@ Sounds: http://themushroomkingdom.net/media/smb/wav
 
 
 # CSE-2100-Project
-<<<<<<< HEAD
-# CSE-2100-Projecct-Eyamin
-# CSE-2100-Projecct-Eyamin
-=======
 # Eyamin Hossan
->>>>>>> 32eefdf9add76b89745d14fc3948a978de8809ce

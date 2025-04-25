@@ -46,49 +46,68 @@ public class MainCamera : MonoBehaviour {
 	}
 
 
-	void Update () {
-		if (canMove) {
-			bool passedLeftEdge = transform.position.x < leftEdge.position.x + cameraWidth;
-			bool passedRightEdge = transform.position.x > rightEdge.position.x - cameraWidth;
+	// void Update () {
+	// 	if (canMove) {
+	// 		bool passedLeftEdge = transform.position.x < leftEdge.position.x + cameraWidth;
+	// 		bool passedRightEdge = transform.position.x > rightEdge.position.x - cameraWidth;
 
-			targetPosition = new Vector3(target.transform.position.x, transform.position.y, transform.position.z);
+	// 		targetPosition = new Vector3(target.transform.position.x, transform.position.y, transform.position.z);
 
 			
-			if (target.transform.localScale.x > 0f && !passedRightEdge &&
-			    targetPosition.x - leftEdge.position.x >= cameraWidth - followAhead) {
-				if (canMoveBackward || target.transform.position.x + followAhead >= transform.position.x) {
-					targetPosition = new Vector3 (targetPosition.x + followAhead, targetPosition.y, targetPosition.z);
-					transform.position = Vector3.Lerp (transform.position, targetPosition, smoothing * Time.deltaTime);
-				}
+	// 		if (target.transform.localScale.x > 0f && !passedRightEdge &&
+	// 		    targetPosition.x - leftEdge.position.x >= cameraWidth - followAhead) {
+	// 			if (canMoveBackward || target.transform.position.x + followAhead >= transform.position.x) {
+	// 				targetPosition = new Vector3 (targetPosition.x + followAhead, targetPosition.y, targetPosition.z);
+	// 				transform.position = Vector3.Lerp (transform.position, targetPosition, smoothing * Time.deltaTime);
+	// 			}
 
-			} else if (target.transform.localScale.x < 0f && canMoveBackward && !passedLeftEdge 
-				&& rightEdge.position.x - targetPosition.x >= cameraWidth - followAhead) {
-				targetPosition = new Vector3 (targetPosition.x - followAhead, targetPosition.y, targetPosition.z);
-				transform.position = Vector3.Lerp (transform.position, targetPosition, smoothing * Time.deltaTime);
+	// 		} else if (target.transform.localScale.x < 0f && canMoveBackward && !passedLeftEdge 
+	// 			&& rightEdge.position.x - targetPosition.x >= cameraWidth - followAhead) {
+	// 			targetPosition = new Vector3 (targetPosition.x - followAhead, targetPosition.y, targetPosition.z);
+	// 			transform.position = Vector3.Lerp (transform.position, targetPosition, smoothing * Time.deltaTime);
+	// 		}
+	// 	}
+			
+
+
+
+		void Update () { // can move camera both left and right
+			if (canMove) {
+				bool passedLeftEdge = transform.position.x < leftEdge.position.x + cameraWidth;
+				bool passedRightEdge = transform.position.x > rightEdge.position.x - cameraWidth;
+
+				targetPosition = new Vector3(target.transform.position.x, transform.position.y, transform.position.z);
+
+				
+				if (target.transform.localScale.x > 0f && !passedRightEdge && 
+					targetPosition.x - leftEdge.position.x >= cameraWidth - followAhead) {
+					targetPosition = new Vector3(targetPosition.x + followAhead, targetPosition.y, targetPosition.z);
+					transform.position = Vector3.Lerp(transform.position, targetPosition, smoothing * Time.deltaTime);
+				} else if (target.transform.localScale.x < 0f && !passedLeftEdge && 
+					rightEdge.position.x - targetPosition.x >= cameraWidth - followAhead) {
+					targetPosition = new Vector3(targetPosition.x - followAhead, targetPosition.y, targetPosition.z);
+					transform.position = Vector3.Lerp(transform.position, targetPosition, smoothing * Time.deltaTime);
+				}
 			}
 		}
-			
+
+		// void go(){
+		// 	bool passedLeftEdge = transform.position.x < leftEdge.position.x + cameraWidth;
+		// 		bool passedRightEdge = transform.position.x > rightEdge.position.x - cameraWidth;
+
+		// 		targetPosition = new Vector3(target.transform.position.x, transform.position.y, transform.position.z);
+		// 		if (target.transform.localScale.x > 0f && !passedRightEdge && 
+		// 			targetPosition.x - leftEdge.position.x >= cameraWidth - followAhead) {
+		// 			targetPosition = new Vector3(targetPosition.x + followAhead, targetPosition.y, targetPosition.z);
+		// 			transform.position = Vector3.Lerp(transform.position, targetPosition, smoothing * Time.deltaTime);
+		// 		} else if (target.transform.localScale.x < 0f && !passedLeftEdge && 
+		// 			rightEdge.position.x - targetPosition.x >= cameraWidth - followAhead) {
+		// 			targetPosition = new Vector3(targetPosition.x - followAhead, targetPosition.y, targetPosition.z);
+		// 			transform.position = Vector3.Lerp(transform.position, targetPosition, smoothing * Time.deltaTime);
+		// 		}
 
 
-
-//		void Update () { // can move camera both left and right
-//			if (canMove) {
-//				bool passedLeftEdge = transform.position.x < leftEdge.position.x + cameraWidth;
-//				bool passedRightEdge = transform.position.x > rightEdge.position.x - cameraWidth;
-//
-//				targetPosition = new Vector3(target.transform.position.x, transform.position.y, transform.position.z);
-//
-//				
-//				if (target.transform.localScale.x > 0f && !passedRightEdge && 
-//					targetPosition.x - leftEdge.position.x >= cameraWidth - followAhead) {
-//					targetPosition = new Vector3(targetPosition.x + followAhead, targetPosition.y, targetPosition.z);
-//					transform.position = Vector3.Lerp(transform.position, targetPosition, smoothing * Time.deltaTime);
-//				} else if (target.transform.localScale.x < 0f && !passedLeftEdge && 
-//					rightEdge.position.x - targetPosition.x >= cameraWidth - followAhead) {
-//					targetPosition = new Vector3(targetPosition.x - followAhead, targetPosition.y, targetPosition.z);
-//					transform.position = Vector3.Lerp(transform.position, targetPosition, smoothing * Time.deltaTime);
-//				}
-//			}
-//		}
-	}
+		// }
+		
+	
 }

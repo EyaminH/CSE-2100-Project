@@ -6385,6 +6385,8 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 29351398}
+  - {fileID: 865924446}
+  - {fileID: 725541077}
   - {fileID: 1645245485}
   - {fileID: 1600955264}
   - {fileID: 1824122272}
@@ -10891,6 +10893,61 @@ Transform:
   - {fileID: 661030213}
   m_Father: {fileID: 35293796}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &725541076
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 407618014}
+    m_Modifications:
+    - target: {fileID: 1946128199947824, guid: 0499be0a366a740b5b1885a62f818283, type: 3}
+      propertyPath: m_Name
+      value: Wall Green Brick Block- MultiCoin (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4126673650123414, guid: 0499be0a366a740b5b1885a62f818283, type: 3}
+      propertyPath: m_RootOrder
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4126673650123414, guid: 0499be0a366a740b5b1885a62f818283, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 32.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4126673650123414, guid: 0499be0a366a740b5b1885a62f818283, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4126673650123414, guid: 0499be0a366a740b5b1885a62f818283, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4126673650123414, guid: 0499be0a366a740b5b1885a62f818283, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4126673650123414, guid: 0499be0a366a740b5b1885a62f818283, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4126673650123414, guid: 0499be0a366a740b5b1885a62f818283, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4126673650123414, guid: 0499be0a366a740b5b1885a62f818283, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0499be0a366a740b5b1885a62f818283, type: 3}
+--- !u!4 &725541077 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4126673650123414, guid: 0499be0a366a740b5b1885a62f818283,
+    type: 3}
+  m_PrefabInstance: {fileID: 725541076}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &730557201
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12585,6 +12642,61 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4982246556586104, guid: dfa1e9ce67c154caf9d1eb6f187c26c6,
     type: 3}
   m_PrefabInstance: {fileID: 862728198}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &865924445
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 407618014}
+    m_Modifications:
+    - target: {fileID: 1946128199947824, guid: 0499be0a366a740b5b1885a62f818283, type: 3}
+      propertyPath: m_Name
+      value: Wall Green Brick Block- MultiCoin (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4126673650123414, guid: 0499be0a366a740b5b1885a62f818283, type: 3}
+      propertyPath: m_RootOrder
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4126673650123414, guid: 0499be0a366a740b5b1885a62f818283, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 33.484
+      objectReference: {fileID: 0}
+    - target: {fileID: 4126673650123414, guid: 0499be0a366a740b5b1885a62f818283, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4126673650123414, guid: 0499be0a366a740b5b1885a62f818283, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4126673650123414, guid: 0499be0a366a740b5b1885a62f818283, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4126673650123414, guid: 0499be0a366a740b5b1885a62f818283, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4126673650123414, guid: 0499be0a366a740b5b1885a62f818283, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4126673650123414, guid: 0499be0a366a740b5b1885a62f818283, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0499be0a366a740b5b1885a62f818283, type: 3}
+--- !u!4 &865924446 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4126673650123414, guid: 0499be0a366a740b5b1885a62f818283,
+    type: 3}
+  m_PrefabInstance: {fileID: 865924445}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &871608346
 PrefabInstance:
